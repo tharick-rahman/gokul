@@ -1,3 +1,23 @@
+/* Logo Combo Styles */
+.logo-combo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.logo-img-white {
+  height: 32px;
+  filter: brightness(0) invert(1);
+  margin: 0;
+  display: block;
+}
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
 /* Stackly Lifestyle - Black & White Theme */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap');

@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Stackly</title>
+  <title>Stackly</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page-login">
   <nav class="nav-wrapper">
     <div class="nav-container">
-      <a href="index.html" class="logo">Stackly</a>
+      <div class="logo-combo">
+        <img src="assets/logo.png" alt="Stackly logo" class="logo-img-white">
+        <span class="logo-text">Stackly</span>
+      </div>
       <ul class="nav-links">
         <li class="nav-dropdown">
           <a href="index.html" class="dropdown-trigger">Home</a>
@@ -32,7 +35,7 @@
     <section class="section-dark page-hero">
       <div class="hero-full">
         <div class="hero-bg img-overlay">
-          <img src="https://picsum.photos/seed/stackly-login-hero/1600/700" alt="Login - Replace with your image">
+          <img src="assets/b11.jpg" alt="Login - Replace with your image">
         </div>
         <div class="container hero-content">
           <span class="badge reveal">Member Access</span>
@@ -59,112 +62,46 @@
             </form>
           </div>
           <div class="img-wrap reveal-right" style="aspect-ratio: 4/5; flex: 1; max-width: 450px;">
-            <img src="https://picsum.photos/seed/stackly-login-side/600/750" alt="Login - Replace with your image">
+            <img src="assets/b2.jpg" alt="Login - Replace with your image">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-dark">
-      <div class="container reveal">
-        <h2 class="section-title">Member Benefits</h2>
-        <div class="grid stagger">
-          <div class="card">
-            <div class="card-img"><img src="https://picsum.photos/seed/stackly-member1/600/220" alt="Premium - Replace with your image"></div>
-            <h3 style="font-family: var(--font-display); margin-top: 0.5rem;">Premium Articles</h3>
-            <p style="color: var(--gray-400); font-size: 0.95rem;">In-depth guides for members only.</p>
-          </div>
-          <div class="card">
-            <div class="card-img"><img src="https://picsum.photos/seed/stackly-member2/600/220" alt="Saved - Replace with your image"></div>
-            <h3 style="font-family: var(--font-display); margin-top: 0.5rem;">Saved Content</h3>
-            <p style="color: var(--gray-400); font-size: 0.95rem;">Bookmark and build your reading list.</p>
-          </div>
-          <div class="card">
-            <div class="card-img"><img src="https://picsum.photos/seed/stackly-member3/600/220" alt="Workshops - Replace with your image"></div>
-            <h3 style="font-family: var(--font-display); margin-top: 0.5rem;">Workshop Access</h3>
-            <p style="color: var(--gray-400); font-size: 0.95rem;">Live sessions and webinar replays.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
+  
 
-    <section class="section-light">
-      <div class="container split-img-left">
-        <div class="img-wrap reveal-left" style="aspect-ratio: 16/9;">
-          <img src="https://picsum.photos/seed/stackly-secure/800/450" alt="Secure - Replace with your image">
-        </div>
-        <div class="split-content reveal-right">
-          <h2 class="section-title">Secure & Private</h2>
-          <p style="color: var(--gray-600); line-height: 1.8;">Your data is encrypted and never shared. We use industry-standard security to keep your account safe.</p>
-        </div>
-      </div>
-    </section>
-
+    
     <section class="section-dark">
       <div class="container reveal">
         <h2 class="section-title">Social Login</h2>
         <p class="section-subtitle" style="margin-bottom: 1.5rem;">Sign in quickly with your preferred account.</p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <button class="btn btn-outline anim-float">Continue with Google</button>
-          <button class="btn btn-outline">Continue with Apple</button>
+          <button class="btn btn-outline anim-float" id="google-login-btn">Continue with Google</button>
+          <button class="btn btn-outline" id="apple-login-btn">Continue with Apple</button>
         </div>
       </div>
     </section>
 
-    <section class="section-light">
-      <div class="container reveal">
-        <div class="hero-with-img">
-          <div class="reveal-left">
-            <h2 class="section-title">New to Stackly?</h2>
-            <p style="color: var(--gray-600); line-height: 1.8; margin-bottom: 1rem;">Creating an account is free and takes less than a minute. No credit card required.</p>
-            <a href="sign-up.html" class="btn btn-primary">Create Account</a>
-          </div>
-          <div class="img-wrap reveal-right" style="aspect-ratio: 1;">
-            <img src="https://picsum.photos/seed/stackly-signup/500/500" alt="Sign up - Replace with your image">
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section-dark">
-      <div class="container reveal">
-        <h2 class="section-title">Account Features</h2>
-        <div class="grid stagger">
-          <div class="card reveal-scale"><h3 style="font-family: var(--font-display); font-size: 1rem;">Track sessions</h3><p style="color: var(--gray-400); font-size: 0.9rem;">Coaching & appointments</p></div>
-          <div class="card reveal-scale"><h3 style="font-family: var(--font-display); font-size: 1rem;">Manage billing</h3><p style="color: var(--gray-400); font-size: 0.9rem;">Membership & payments</p></div>
-          <div class="card reveal-scale"><h3 style="font-family: var(--font-display); font-size: 1rem;">Preferences</h3><p style="color: var(--gray-400); font-size: 0.9rem;">Notifications & settings</p></div>
-          <div class="card reveal-scale"><h3 style="font-family: var(--font-display); font-size: 1rem;">Community</h3><p style="color: var(--gray-400); font-size: 0.9rem;">Forum access</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-light">
-      <div class="container reveal">
-        <h2 class="section-title">Need Help?</h2>
-        <p class="section-subtitle" style="margin-bottom: 1rem;">Trouble signing in? Reset your password or contact support.</p>
-        <a href="contact.html" class="btn btn-outline anim-pulse">Contact Support</a>
-      </div>
-    </section>
-
-    <section class="section-dark">
-      <div class="container reveal" style="text-align: center;">
-        <div class="img-wrap featured-img" style="max-width: 600px; margin: 0 auto 1.5rem;">
-          <img src="https://picsum.photos/seed/stackly-community/800/300" alt="Community - Replace with your image" style="width: 100%; height: 200px; object-fit: cover;">
-        </div>
-        <h2 class="section-title">Join Our Community</h2>
-        <p class="section-subtitle" style="margin: 1rem auto;">Thousands of members building better habits. Start your journey today.</p>
-      </div>
-    </section>
-  </main>
+ 
 
   <footer>
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="logo">Stackly</a><p>Your guide to intentional living. Wellness, design, and everyday habits for a better life.</p></div>
+      <div class="footer-brand"><div class="logo-combo"><img src="assets/logo.png" alt="Stackly logo" class="logo-img-white"><span class="logo-text">Stackly</span></div><p>Your guide to intentional living. Wellness, design, and everyday habits for a better life.</p></div>
       <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About</a></li><li><a href="service.html">Services</a></li></ul></div>
       <div class="footer-links"><h4>Connect</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html">Login</a></li></ul></div>
     </div>
     <div class="footer-bottom">&copy; 2025 Stackly. All rights reserved.</div>
   </footer>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var googleBtn = document.getElementById('google-login-btn');
+      var appleBtn = document.getElementById('apple-login-btn');
+      if (googleBtn) googleBtn.addEventListener('click', function() { window.location.href = '404.html'; });
+      if (appleBtn) appleBtn.addEventListener('click', function() { window.location.href = '404.html'; });
+    });
+  </script>
 </body>
 </html>
